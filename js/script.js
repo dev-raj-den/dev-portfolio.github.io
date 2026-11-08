@@ -48,7 +48,7 @@ if(/project|work|built|portfolio|app/.test(q))return"Dev Raj has built a Wholesa
 if(/skill|tool|tech|know|language/.test(q))return"Web: HTML, CSS, JavaScript, React, Next.js, Tailwind. Backend: Python, Django, Node basics. Security: Nmap, Wireshark, Burp Suite, OWASP Top 10, Kali Linux.";
 if(/cert|course|training/.test(q))return"Dev Raj holds 6 certificates, including Ethical Hacking with AI (Internshala x IITM Pravartak, top performer), NSDC Grade A, and two DCSC web app pentesting levels. Check the Certificates section.";
 if(/educat|study|college|kgec|diploma/.test(q))return"Dev Raj is studying Information Technology at KGEC and has completed a Diploma in Computer Science & Technology.";
-if(/contact|email|hire|mail|reach|intern/.test(q))return"You can reach Dev Raj at devsupport24@gmail.com or via GitHub (Devrajgethub) and TryHackMe (devraj.den). He is open to internships and collaboration.";
+if(/contact|email|hire|mail|reach|intern/.test(q))return"You can reach Dev Raj at diwakar46cst@gmail.com or via GitHub (dev-raj-den) and TryHackMe (devraj.den). He is open to internships and collaboration.";
 return"I can tell you about Dev Raj’s projects, skills, certificates, education or how to contact him. What would you like to know?"}
 async function ask(q){if(busy||!q.trim())return;busy=true;q=q.trim().slice(0,300);add("me",q);hist.push({role:"user",content:q});var b=add("bot","…");
 if(!sm&&!tried){tried=true;try{sm=(window.claude&&claude.use)?await claude.use("sample"):null}catch(e){sm=null}}
